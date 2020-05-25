@@ -20,7 +20,7 @@ We designed algorithms and models to recognize species and diseases in the crop 
 """
 
 # Install nightly package for some functionalities that aren't in alpha
-!pip install tensorflow-gpu==2.1
+# !pip install tensorflow-gpu==2.1
 import tensorflow as tf
 import tensorflow_hub as hub
 
