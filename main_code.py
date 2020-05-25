@@ -21,13 +21,8 @@ We designed algorithms and models to recognize species and diseases in the crop 
 
 # Install nightly package for some functionalities that aren't in alpha
 # !pip install tensorflow-gpu==2.1
-import tensorflow as tf
-import tensorflow_hub as hub
+# import tensorflow as tf
 
-module_url = "https://tfhub.dev/google/nnlm-en-dim128/2"
-embed = hub.KerasLayer(module_url)
-embeddings = embed(["A long sentence.", "single-word", "http://example.com"])
-print(embeddings.shape)
 
 #!pip install "tensorflow_hub>=0.6.0"
 #!pip install "tensorflow>=2.0.0"
@@ -38,6 +33,10 @@ import tensorflow as tf
 #tf.enable_eager_execution()
 
 import tensorflow_hub as hub
+module_url = "https://tfhub.dev/google/nnlm-en-dim128/2"
+embed = hub.KerasLayer(module_url)
+embeddings = embed(["A long sentence.", "single-word", "http://example.com"])
+print(embeddings.shape)
 import os
 from tensorflow import keras
 from tensorflow.keras.layers import Dense, Flatten, Conv2D
