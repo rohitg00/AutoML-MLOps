@@ -66,9 +66,9 @@ We will download a public dataset of 54,305 images of diseased and healthy plant
 Create the training and validation directories
 """
 
-data_dir = ('/root/PlantVillage')
-train_dir = ('/root/PlantVillage/train')
-validation_dir = ('/root/PlantVillage/validation')
+data_dir = ('/root/workspace/mlops/PlantVillage')
+train_dir = ('/root/workspace/mlops/PlantVillage/train')
+validation_dir = ('/root/workspace/mlops/PlantVillage/validation')
 
 import time
 import os
@@ -91,7 +91,7 @@ You'll also need to load in a mapping from category label to category name. You 
 
 import json
 
-with open('/root/categories.json', 'r') as f:
+with open('/root/workspace/mlops/categories.json', 'r') as f:
     cat_to_name = json.load(f)
     classes = list(cat_to_name.values())
 print (classes)
