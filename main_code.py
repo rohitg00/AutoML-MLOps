@@ -180,7 +180,7 @@ model.compile(
 train model using validation dataset for validate each steps
 """
 
-EPOCHS=10 #@param {type:"integer"}
+EPOCHS=1 #@param {type:"integer"}
 
 history = model.fit_generator(
         train_generator,
