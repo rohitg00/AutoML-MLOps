@@ -269,7 +269,7 @@ Now that you've trained the model, export it as a saved model
 import time
 t = time.time()
 
-export_path = "/root/{}".format(int(t))
+export_path = "/root/workspace/mlops/{}".format(int(t))
 tf.keras.models.save_model(model, export_path, save_format="tf")
 
 export_path
