@@ -1,1 +1,1 @@
-# AutoML-MLOps
+# mlops
