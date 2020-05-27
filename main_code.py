@@ -17,7 +17,7 @@ from keras.callbacks import Callback
 from sklearn.metrics import accuracy_score
 import numpy as np
 
-#class for writing the accuracy in a file
+# class for writing the accuracy in a file
 class myCallback(Callback):
       def on_epoch_end(self, epoch, logs={}):
           
